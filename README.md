@@ -1,2 +1,3 @@
-# Coding-Challenges
-Simple Console Coding Challenges
+# Coding_Challenges
+ * 100 Simple Console Coding Challenges
+ * Should/Could be done with multiple languages
