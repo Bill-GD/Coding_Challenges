@@ -1,7 +1,14 @@
+
 // slow af for i >= 15
 import java.util.Date;
 
 public class No07_15 {
+    static void timeSince(long t1) {
+        long t2 = new Date().getTime();
+        System.out.println(
+                "Time: " + ((t2 - t1 < 1000) ? (t2 - t1) + "ms" : new Date(t2 - t1).toString().substring(14, 19)));
+    }
+
     static long countPath(int n, int m) {
         if (n == 0 || m == 0)
             return 1;
@@ -13,10 +20,9 @@ public class No07_15 {
     }
 
     public static void main(String[] args) {
-        long t1 = (new Date()).getTime();
-        int i = 20; // about 1m14s
+        long t1 = new Date().getTime();
+        int i = 11; // 20 -> about 1m14s
         System.out.println(countPath(i, i));
-        System.out.println(new Date(new Date().getTime() - t1).toString());
-        System.out.println(new Date(1).toString());
+        timeSince(t1);
     }
 }
