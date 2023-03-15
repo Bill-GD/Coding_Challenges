@@ -30,7 +30,7 @@ const begin = () => {
     for (let round = 0; round < maxRound; round++) {
         console.log(`Possible colors: `);
         console.log(getAllColors());
-        
+
         console.log(` (!) Remaining guess: ${maxRound - round}`);
         let correct = 0, misplaced = 0;
         let userColor = [];
@@ -58,7 +58,7 @@ const main = () => {
     setRound();
     begin();
 
-    console.log(`Time: ${Date.now() - start}ms`);
+    console.log(`Time: ${(Date.now() - start) / 1000}s`);
 };
 
 main();
