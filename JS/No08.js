@@ -1,7 +1,7 @@
 const fs = require('fs');
 const prompt = require('prompt-sync')({ sigint: true });
 
-let maxGuess = 10;
+const maxGuess = 10;
 
 const path = '../Resources/listOfWords.txt';
 const words = fs.readFileSync(path, 'utf-8').split(/[",]+/);
