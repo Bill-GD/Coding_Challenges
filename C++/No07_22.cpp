@@ -31,7 +31,7 @@ void qSort(vector<string>& v, int l, int r) {
 
 int main() {
     auto start = high_resolution_clock::now();
-    ifstream inF("./Resources/names.txt");
+    ifstream inF("../Resources/names.txt");
 
     vector<string> v;
     string name;

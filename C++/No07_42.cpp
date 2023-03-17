@@ -20,7 +20,7 @@ bool is_triangle_number(int n) {
 int main() {
     auto start = high_resolution_clock::now();
 
-    ifstream inF("./Resources/words.txt");
+    ifstream inF("../Resources/words.txt");
     string word;
     int count = 0;
     while (getline(inF, word, ',')) {
