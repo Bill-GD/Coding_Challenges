@@ -6,7 +6,6 @@ const maxGuess = 10;
 const path = '../Resources/listOfWords.txt';
 const words = fs.readFileSync(path, 'utf-8').split(/[",]+/);
 words.shift(); words.pop();
-const wordCount = words.length;
 
 const printArray = array => {
     let string = '';
@@ -17,7 +16,7 @@ const printArray = array => {
 };
 
 const startGame = () => {
-    let chosenWord = words.at(Math.trunc(Math.random() * wordCount));
+    let chosenWord = words.at(Math.trunc(Math.random() * words.length));
     let chosenWordArray = Array.from(chosenWord);
     let guessArray = new Array(chosenWord.length).fill('_');
     let wrongArray = new Set();
